@@ -15,14 +15,14 @@ public class Ko_papir_ollo {
         int robot_valasztas = (int) (Math.random()  * 3) + 1; // ez itt alapbol double at kell valtani intre
         
         if (valasztott == 1 && robot_valasztas == 3 || valasztott == 2 && robot_valasztas == 1 || valasztott == 3 && robot_valasztas == 2 ) {
-            System.out.println("Nyertél!");
+            System.out.println("Nyertel!");
          
         }
         else if (valasztott == robot_valasztas) {
-            System.out.println("Döntetlen!");
+            System.out.println("Dontetlen!");
     }
         else {
-            System.out.println("Vesztettél!");
+            System.out.println("Vesztettel!");
         }
     }
         
@@ -34,7 +34,20 @@ public class Ko_papir_ollo {
         return valasztas;
     }
     
-    // kene egy ertelmezo fuggveny ami visszadja, hogy a szam mit jelent
+    public static String ertelemezo(int szam)
+    {
+        if (szam == 1) {
+            return "Ko";
+            
+        }
+        else if (szam == 2) {
+            return "Papir";
+        }
+        else {
+            return "Ollo";
+        }
+    }
+    
     
     
 }
