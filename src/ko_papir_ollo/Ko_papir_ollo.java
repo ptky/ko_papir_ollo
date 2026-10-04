@@ -15,14 +15,14 @@ public class Ko_papir_ollo {
         int robot_valasztas = (int) (Math.random()  * 3) + 1; // ez itt alapbol double at kell valtani intre
         
         if (valasztott == 1 && robot_valasztas == 3 || valasztott == 2 && robot_valasztas == 1 || valasztott == 3 && robot_valasztas == 2 ) {
-            System.out.println("Nyertel!");
+            System.out.println("Nyertel! A te valasztasod: " + ertelemezo(valasztott)+"" + " A robot valasztasa: " + ertelemezo(robot_valasztas));
          
         }
         else if (valasztott == robot_valasztas) {
-            System.out.println("Dontetlen!");
+            System.out.println("Dontetlen! A te valasztasod: " + ertelemezo(valasztott) + ", A robot valasztasa: " + ertelemezo(robot_valasztas));
     }
         else {
-            System.out.println("Vesztettel!");
+            System.out.println("Vesztettel! A te valasztasod: " + ertelemezo(valasztott) + ", A robot valasztasa: " + ertelemezo(robot_valasztas));
         }
     }
         
