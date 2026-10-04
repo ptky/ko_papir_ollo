@@ -57,7 +57,7 @@ public class Ko_papir_ollo {
          
         }
         else if (valasztott == masodik_jatekos) {
-            System.out.println("Döntetlen. Elso jatekos valasztasa: " + ertelemezo(valasztott) + ", Masodik jatekos valasztasa: " + ertelemezo(masodik_jatekos));
+            System.out.println("Dontetlen. Elso jatekos valasztasa: " + ertelemezo(valasztott) + ", Masodik jatekos valasztasa: " + ertelemezo(masodik_jatekos));
     }
         else {
             System.out.println("2. Jatekos nyert. Elso jatekos valasztasa: " + ertelemezo(valasztott) + ", Masodik jatekos valasztasa: " + ertelemezo(masodik_jatekos));
